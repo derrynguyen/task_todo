@@ -1,0 +1,137 @@
+.header_list{
+    margin-top :-0.5vh;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif ;
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1vh;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.26);
+    span{
+        margin-left: 1vh;
+    }
+    .text{
+        width: 15vh;
+    }
+    .setting{
+        margin-right: 1.5vh;
+    }
+}
+
+.listtodo{
+    margin-top :-0.5vh;
+    width: calc(100% - 30px);
+    padding: 15px;
+    height: 50vh;
+    overflow-x:scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+        background:#141414;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #3a332d;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #3a332d;
+    }
+   
+    .box{
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif ;
+        width: calc(100% - 20px);
+        padding: 10px;
+        position: relative;
+        color: #616065;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // &:hover{
+        //     background-color: #ffffff;
+        //     color: black;
+        //     cursor: pointer;
+        //     border-radius: 3px;
+        //     .title{
+        //         color: black;
+        //         i{
+        //             color: black;
+
+        //         }
+        //     }
+        // }
+        .title{
+            color: white;
+            font-size: 14px;
+            width: 15vh;
+            .edit_nametask{
+                width: 70%;
+                border: none;
+                outline: none;
+                padding: 10px;
+                background-color: #1f1f1f;
+                color: white;
+                border-radius: 4px;
+                font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif ;
+            }
+            i{
+                color:green ;
+                border: none;
+                outline: none;
+                padding: 11px;
+                background-color: #1f1f1f;
+                border-radius: 4px;
+                margin-left: 1vh;
+            }
+            &:hover{
+                cursor: pointer;
+                i{
+                    color: green;
+                    background-color: white;
+                }
+                input{
+                    color: white;
+                }
+            }
+        }
+        .tag{   
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 10px;
+            color: white;
+            width: 15vh;
+            span{
+                border-radius: 3px;
+                color: black;
+                padding: 8px;
+            }
+        }
+        .handle{
+            width: 10vh;
+            font-size: 13px;
+            color: white;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            .delete{
+               
+                &:hover{
+                    cursor: pointer;
+                    color: red;
+                }
+            }
+            span{
+                
+                border-radius: 3px;
+                color: black;
+                padding: 8px;
+            }
+        }
+        
+     
+       
+    }
+}

@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.todo_wapper{
+    width: 100%;
+    height: 100vh;
+    animation: fadeInFromNone 0.5s ease-out;
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 100% at 50% 50%, rgba(22, 21, 35, 0.815) 0%, rgba(29, 27, 55, 0.014) 100%);
+
+    .todo_main{
+        width: 67vh;
+        height: 80vh;
+        background-color: black;
+        border-radius: 7px;
+        position: relative;
+
+        .note{
+            position: absolute;
+            bottom: 6vh;
+            width: 99%;
+            height: 6vh;
+            background-color: black;
+            span{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: calc(100% - 30px);
+                padding: 15px;
+                font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif ;
+                color: gray;
+                font-size: 13px;
+            }
+
+            
+        }
+    }
+}
